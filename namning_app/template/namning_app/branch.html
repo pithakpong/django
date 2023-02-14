@@ -1,0 +1,11 @@
+{% extends "namning_app/master.html" %}
+{% load static %}
+
+{% block title %} 
+{{mymembers.firstname}}
+{% endblock title %} 
+
+{% block content %} 
+<h1>{{mymembers.firstname}}</h1>
+<p>Back to <a href="/members">Members</a></p>
+{% endblock content %}

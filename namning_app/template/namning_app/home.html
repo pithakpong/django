@@ -1,0 +1,13 @@
+{% extends "namning_app/master.html "%}
+{% load static %}
+
+    {% block title %}
+     <h1>Members</h1> 
+     {% endblock title%}
+  
+  {% block content%} 
+
+      {% for x in mymembers %}
+      <h3><p>Back to <a href="/members/branch/{{x.id}}">{{x.firstname}}</a></p></h3>
+      {% endfor %}
+  {% endblock content%}
